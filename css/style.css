@@ -1,0 +1,708 @@
+/*----- 
+
+            Global: generelle regler for hele sited som fx. font family, serif, color etc.
+
+-----*/
+
+* {
+    box-sizing: border-box;
+    margin: 0%;
+}
+
+h1 {
+    font-size: 25px;
+    font-family: h1overskrift;
+}
+
+h2 {
+    font-size: 19px;
+    font-family: h1overskrift;
+}
+
+p {
+    font-size: 16px;
+    font-family: paragraf;
+}
+
+a:visited{
+    color: white;
+}
+
+.x-br{
+    margin-bottom: 2%;
+}
+.center-h1 {
+    text-align: center;
+}
+
+@font-face {
+    font-family: paragraf;
+    src: url(../fonts/raleway/Raleway-light.ttf);
+}
+
+@font-face {
+    font-family: h1overskrift;
+    src: url(../fonts/arima_madurai/ArimaMadurai-Regular.ttf);
+}
+
+@font-face {
+    font-family: loeves;
+    src: url(../fonts/text_me_one/TextMeOne-Regular.ttf);
+}
+
+
+/*---------------------------------*/
+/*--Banner img--*/
+.wide-picture{
+    margin-bottom: -1%;
+}
+
+
+
+
+/*--header--*/
+.f-img-desktop{
+    display: none;
+}
+
+.forside-header{
+    background-image: url(../images/front.jpg);
+    background-size: 100%
+}
+
+header {
+    background-color: #54504b;
+    text-align: center;
+}
+
+header img {
+    margin-left: 4%;
+}
+
+/*--navigation--*/
+
+nav ul {
+    color: white;
+    font-family: h1overskrift;
+}
+
+nav ul li {
+    list-style: none;
+    margin-top: 5%;
+    width: 100%;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+
+
+/*--Velkommen section--*/
+
+.velkommen {
+    text-align: center;
+    color: white;
+    background-color: #67635f;
+    padding: 20%
+}
+
+.velkommen-h1 {
+    padding-bottom: 10%;
+}
+
+.velkommen-p {
+    padding: 2%;
+    text-align: justify;
+    ;
+}
+
+.aside-img{
+    display: none;
+}
+
+/*--Citat--*/
+
+.citat {
+    background-image: url(../images/citat.jpg);
+    color: white;
+    text-align: center;
+    padding: 5%
+}
+
+.fade-citat {
+    opacity: 0.7;
+}
+
+
+/*--kommende events--*/
+
+.kommende-events {
+    padding: 2%;
+    background-color: #67635f;
+    color: white;
+    padding-left: 20%;
+    padding-right: 20%
+}
+
+.kommende-event-h1 {
+    padding-bottom: 10%;
+}
+
+.event-h2 {
+    padding-bottom: 2%;
+}
+
+.dato {
+    padding-bottom: 2%;
+}
+
+.k-event-p {
+    padding-bottom: 2%;
+}
+
+.laes-mere {
+    padding-bottom: 10%;
+    text-decoration: underline;
+    color: #D2984C;
+}
+
+/*--------------------------- Kalender side -----------------------------*/
+
+/*-- Kommende events --*/
+.events{
+    padding: 20%;
+    background-image: url(../images/traetekstur.jpg);
+    background-size: 100%;    
+    background-color: saddlebrown;
+    overflow: scroll;
+    height: 40em;
+    color: white;
+    padding-bottom: 4%;
+    padding-top: 12%;
+}
+
+.event-p{
+    padding-bottom: 10%;
+}
+
+.dato{
+    font-weight: 990;
+}
+
+.click-kalender{
+    background-color: #67635f;
+    text-align: center;
+    padding: 4%;
+}
+
+.kalender-arrangement{
+    padding: 20%;
+    background-image: url(../images/traetekstur.jpg);
+    background-size: 100%;
+    color: white;
+}
+
+.privant-arrangementer{
+margin-bottom: 10%;
+
+}
+
+/*------------------------------ Om os side ---------------------------*/
+.om-os{
+    padding: 20%;
+    background-image:url(../images/about1.jpg);
+    background-size: 100%;
+    background-color: #67635f;
+    color: white
+}
+
+.kontakt-bg{
+    background-image: url(../images/traetekstur.jpg);
+    background-size: 100%;
+    padding: 10%;
+    color: white;
+}
+.kontakt{
+    display: flex;  
+
+}
+.kontakt1{
+    flex: 1;
+    text-align: center;
+}
+.kontakt2{
+    flex: 1;
+    text-align: center;
+}
+
+.l-his{
+    padding: 20%;
+    background-color: #67635f;
+    color: white;
+}
+/*------------------------------footer------------------------------------*/
+
+footer {
+    background-color: #54504b;
+    color: white;
+}
+
+footer ul {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-bottom: 2%;
+    list-style: none;
+    text-align: center;
+    flex: 1;
+    font-family: paragraf;
+
+}
+
+.footerh1 {
+    font-size: 18px;
+    font-family: h1overskrift;
+}
+
+
+
+
+/*------------------------------------- Menukort ----------------------------*/
+/*--billeder af menu--*/
+
+.studierabat {
+    color: white;
+}
+
+.maanedensvin {
+    color: white;
+}
+
+.studierabat {
+    background-image: url(../images/croissant.jpg);
+    background-size: 100%;
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+.maanedensvin {
+    background-image: url(../images/vin-rum.jpg);
+    background-size: 100%;
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+.fuldmenu {
+    background-image: url(../images/traetekstur.jpg);
+    background-size: 50%;
+}
+
+.menuskrift {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.vinskrift {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fuldmenu {
+    position: relative;
+    text-align: center;
+}
+
+#menukortbillede {
+    margin-top: 3%;
+}
+
+#vinkortbillede {
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.x-br {
+    margin-bottom: 2%;
+}
+
+/*--tilbud--*/
+
+.fuldmenu,
+.tilbud {
+    width: 100%;
+}
+
+.tilbud {
+    text-align: center;
+}
+
+.tilbudstekst {
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+/*--bøger--*/
+
+.boeger1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-image: url(../images/traetekstur.jpg);
+    background-size: 100%;
+}
+
+.boeger {
+    height: 200px;
+    margin-top: 15%;
+}
+
+/* FASTE ARRANGEMENTER*/
+
+.intro-fast,
+.bogklub,
+.abenscene,
+.yclub,
+.litt {
+    background-color: #67635f;
+    color: #fff;
+    padding: 15%;
+    text-align: center;
+}
+
+.fbill {
+    width: 100%;
+    margin-bottom: -2%;
+}
+
+/*FASTE ARRANGEMENTER SLUT*/
+
+/*--footer--*/
+
+footer {
+    background-color: #54504b;
+    color: white;
+}
+
+footer ul {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-bottom: 2%;
+    list-style: none;
+    text-align: center;
+    flex: 1;
+    font-family: paragraf;
+
+}
+
+.footerh1 {
+    font-size: 18px;
+    font-family: h1overskrift;
+}
+
+
+
+
+/*----- 
+
+Resposive sizes: Sæt sizing ind til de forskellige størrelser.
+
+-----*/
+
+/*Mobile*/
+
+@media (max-width: 767px) {
+    .menubillede {
+        width: 90%
+    }
+    .studierabat {
+        background-color: red;
+    }
+    .maanedensvin {
+        background-color: blue;
+    }
+}
+
+
+/*tablet*/
+
+@media(min-width:768px) and (max-width: 1023px) {
+    
+    .menubillede {
+        width: 85%
+    }
+    .tilbud {
+        display: flex;
+    }
+    .studierabat {
+        width: 50%;
+    }
+
+    .maanedensvin {
+        width: 50%;
+    }
+    .tilbudstekst {
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+    .bogtekst {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+/*desktop*/
+
+@media(min-width:1024px) {
+/*--header--*/
+    .d-none{
+        display: none;
+    }
+    .underside-logo{
+        margin:  0%;
+        float: left;
+        padding-top: 1%;
+        padding-left: 1%;
+    }
+    .f-img-mobil{
+        display: none;
+    }
+    .f-img-desktop{
+    display:inline;
+    }
+    
+    header {
+        display: block;
+    }
+    
+    header img{
+        margin: 0%;
+        margin-top: 18%;
+        margin-bottom: 18%;
+    }
+    
+/*--navigation--*/
+    nav {
+    }
+    nav ul {
+        display: flex;
+        font-size: 23px;
+    }
+
+    nav ul li {
+        text-align: center;
+        margin: auto;
+        padding-top: 4%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    
+/*--velkommen--*/
+.velkommen-desktop{
+        display: flex;
+    }
+    
+    .velkommen{
+        padding: 2%;
+        text-align: center;
+        width: 100%;
+    }   
+    
+    .velkommen-h1{
+        padding-bottom: 5%;
+        padding-top: 12%;
+    }
+    .velkommen-p{
+        padding-left: 30%;
+        padding-right: 30%;
+    }
+    .aside-img{
+        display:grid;
+        margin-right: -20%;
+    }
+/*--Kommende Events--*/
+    .k-event-desktop{
+        display: flex;
+    }
+    
+    .kommende-event-h1{
+        padding-top: 5%;
+    }
+    
+    .kommende-events{
+        padding: 10%;
+        padding-bottom: 0%;
+
+    }
+    
+    .k-event-img{
+        margin-right: 0%;
+        height: 100%;
+
+    }
+    
+/*-- Event side --*/
+    .kalender{
+        display: flex;
+        background-color: #67635f; 
+    }
+    
+    .click-kalender{
+        order: 1;
+        margin: auto;
+    }
+    
+    .events{
+        order: 2;
+        padding: 2%;
+    }
+    
+    .kalender-arrangement{
+        display: flex;
+        padding: 0%;
+        padding-top: 3%;
+    }
+    .privant-arrangementer{
+        padding: 5%;             
+        margin: auto;
+        margin-right: -8%;
+        padding-right: 20%;
+
+    }
+    
+    .privant-vinsagning{
+        padding: 5%;
+        margin: auto;
+    }
+    
+    
+    
+/*-- Om os --*/
+    
+    .om-os{
+        padding: 12%;
+        flex: 3;
+    }
+    .om-kontakt{
+        display: flex;
+        background-color: #67635f;
+        color: white;
+        margin-bottom: -4%;
+    }
+    
+    .kontakt-bg{
+        padding: 10%;
+        flex: 1;
+    }
+    
+    .kontakt{
+        padding: 1%;
+        display:inline;
+    }
+    .kontakt1{
+        width: 100%;
+        margin-bottom: 50%;
+    }
+    
+    kontakt2{
+        width: 100%;
+    }
+    
+    .his-omtale{
+        display: flex;
+        background-color: #67635f;
+    }
+    .historie{
+        margin: auto;
+    }
+    
+    
+/*-- Menukort --*/
+    
+ .menubillede {
+        width: 60%
+    }
+    .tilbud {
+        display: flex;
+    }
+    .studierabat {
+        width: 50%;
+    }
+
+    .maanedensvin {
+        width: 50%;
+    }
+
+    /*--bøger--*/
+    .bogtekst {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    
+    /*FASTE ARRANGEMENTER */
+    .intro-flex {
+        display: flex;
+        flex-direction: row;
+        align-content: flex-start;
+        min-height: 300px;
+    }
+    .intro-fast {
+        flex: 1;
+    }
+    .imgcon {
+        flex: 4;
+        background-image: url(../images/vin-rum.jpg);
+        background-size: cover;
+   
+    }
+    .vin {
+        visibility: hidden;
+        /*overflow: hidden;
+        max-height: 600px;
+        padding: 0%;*/
+    }
+
+    .litt-flex {
+        display: flex;
+        flex-direction: row;
+        align-content: flex-start;
+    }
+    .starincon {
+        flex: 3;
+        background-image: url(../images/starinlys.jpg);
+        background-size: cover;
+    }
+    
+    .starin {
+        visibility: hidden;
+        /*flex: 3;
+        overflow: hidden;
+        max-height: 600px;
+        padding: 0%;*/
+    }
+    .litt {
+        flex: 1;
+    }
+    .intro-fast,
+    .litt {
+        padding: 8% 10%;
+    }
+   
+    .bogklub,
+    .abenscene,
+    .yclub {
+ background-image: url(../images/citat.jpg);
+         padding: 8% 20%;
+}
+    
+    /*FASTE ARRANGEMENTER SLUT */
+/*--footer--*/
+    footer {
+        display: flex;
+    }
+}
